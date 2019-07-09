@@ -29,16 +29,8 @@ obj-$(CONFIG_MSM_GCC_8996) += gcc-msm8996.o
 obj-$(CONFIG_MSM_GCC_660) += gcc-sdm660.o
 obj-$(CONFIG_MSM_MMCC_8960) += mmcc-msm8960.o
 obj-$(CONFIG_MSM_MMCC_8974) += mmcc-msm8974.o
-obj-$(CONFIG_MSM_MMCC_8996) += mmcc-msm8996.o
-obj-$(CONFIG_MSM_GPUCC_660) += gpucc-sdm660.o
-obj-$(CONFIG_MSM_MMCC_660) += mmcc-sdm660.o
-obj-$(CONFIG_KPSS_XCC) += kpss-xcc.o
-obj-$(CONFIG_QCOM_HFPLL) += hfpll.o
-obj-$(CONFIG_KRAITCC) += krait-cc.o
-obj-$(CONFIG_QCOM_A53) += clk-a53.o
-obj-$(CONFIG_QCOM_CLK_RPM) += clk-rpm.o
-obj-$(CONFIG_QCOM_CLK_SMD_RPM) += clk-smd-rpm.o
-obj-$(CONFIG_CLOCK_CPU_OSM) += clk-cpu-osm.o
-obj-$(CONFIG_CLOCK_QPNP_DIV) += clk-qpnp-div.o
+# MSM8976
+obj-$(CONFIG_ARCH_MSM8916)	+=clock-gcc-8976.o
+obj-$(CONFIG_ARCH_MSM8916)	+=clock-rcgwr.o
+obj-$(CONFIG_ARCH_MSM8916)	+=clock-cpu-8976.o
 
-obj-y += mdss/
