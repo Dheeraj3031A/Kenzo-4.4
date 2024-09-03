@@ -2118,7 +2118,8 @@ static int qpnp_parse_dt_config(struct platform_device *pdev,
 
 	chip->pwm_mode = mode;
 	_pwm_change_mode(chip, mode);
-	_pwm_enable(chip);
+	if (chip->dtest_line != 1)
+			_pwm_enable(chip);
 
 read_opt_props:
 	/* Initialize optional config parameters from DT if provided */

@@ -85,3 +85,8 @@ obj-$(CONFIG_ARCH_ZX)			+= zte/
 obj-$(CONFIG_ARCH_ZYNQ)			+= zynq/
 obj-$(CONFIG_H8300)		+= h8300/
 obj-$(CONFIG_ARCH_QCOM)		+= msm/
+
+# MSM8976
+obj-$(CONFIG_ARCH_MSM8916)	+=clock-gcc-8976.o
+obj-$(CONFIG_ARCH_MSM8916)	+=clock-rcgwr.o
+obj-$(CONFIG_ARCH_MSM8916)	+=clock-cpu-8976.o
